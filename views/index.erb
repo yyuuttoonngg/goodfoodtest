@@ -1,0 +1,6 @@
+<h1>goodfoodhunting</h1>
+<p><a href="/dishes/new">post new dish</a></p>
+<% @dishes.each do |dish| %>
+    <p><a href="/dishes/<%=dish['id']%>"><%=dish["name"] %></a></p>
+<%end%>
+<p><a href="/login">login</a></p>
